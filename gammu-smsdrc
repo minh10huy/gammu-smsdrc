@@ -5,12 +5,11 @@ logfile = /var/log/gammu/gammu.log
 logformat = textall
 
 [smsd]
-#Service = files
 service = sql
 host = dbmysql
-user = root
+user = smbd
 password = passw0rd
-database = smsd
+database = smsdb
 InboxPath = /var/spool/gammu/inbox/
 OutboxPath = /var/spool/gammu/outbox/
 SentSMSPath = /var/spool/gammu/sent/
@@ -20,7 +19,7 @@ OutboxFormat = unicode
 TransmitFormat = auto
 debugLevel = 1
 LogFile = /var/log/gammu/smsd.log
-RunOnReceive = /opt/gammu/sms-parser.sh
+#RunOnReceive = /opt/gammu/sms-parser.sh
 DeliveryReport = sms
 DeliveryReportDelay = 7200
 CheckSecurity = 0
