@@ -6,6 +6,7 @@ logformat = textall
 
 [smsd]
 service = sql
+driver = native_mysql
 host = dbmysql
 user = smbd
 password = passw0rd
