@@ -22,7 +22,12 @@ debugLevel = 1
 LogFile = /var/log/gammu/smsd.log
 #RunOnReceive = /opt/gammu/sms-parser.sh
 DeliveryReport = sms
-DeliveryReportDelay = 7200
+DeliveryReportDelay = 150
 CheckSecurity = 0
+ReceiveFrequency = 60
+StatusFrequency = 60
+CommTimeout = 60
+SendTimeout = 60
+LoopSleep = 10
 
 
