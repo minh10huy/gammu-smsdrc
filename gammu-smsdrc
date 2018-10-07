@@ -21,6 +21,7 @@ TransmitFormat = auto
 debugLevel = 1
 LogFile = /var/log/gammu/smsd.log
 #RunOnReceive = /opt/gammu/sms-parser.sh
+RunOnFailure = /mnt/restartsmsd.sh
 DeliveryReport = sms
 DeliveryReportDelay = 150
 CheckSecurity = 0
