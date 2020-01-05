@@ -1,5 +1,5 @@
 [gammu]
-port = /dev/ttyUSB1
+port = /dev/ttyUSB2
 connection = at115200
 logfile = /var/log/gammu/gammu.log
 logformat = textall
